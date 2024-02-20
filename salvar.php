@@ -1,10 +1,10 @@
 <?php
 require 'conexao.php';
   $target_dir = "uploads/";
-  $arquivo = $target_dir . basename($_FILES["image"]["name"]); //diretorio da imagem
-  move_uploaded_file($_FILES["image"]["tmp_name"], $arquivo); //função que move a imagem
+  $arquivo = $target_dir . basename($_FILES["image"]["name"]); 
+  move_uploaded_file($_FILES["image"]["tmp_name"], $arquivo); 
   
-  $titulo = $_POST['titulo']; //informação digitada no campo titulo
+  $titulo = $_POST['titulo']; 
   $descricao = $_POST['descricao'];
   
   //INSERINDO NO BD

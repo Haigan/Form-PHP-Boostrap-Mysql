@@ -61,12 +61,12 @@
             });
     
             $("#upload-form").submit(function(e) {
-                e.preventDefault(); //evita recarregar a pagina
+                e.preventDefault(); 
                 var formData = new FormData(this);
                 $.ajax({
-                    url: "salvar.php", // diretorio
-                    type: "POST",  //metodo
-                    data: formData,  //arquivo
+                    url: "salvar.php", 
+                    type: "POST",  
+                    data: formData, 
                     success: function(data) {
                         console.log(data);
                     

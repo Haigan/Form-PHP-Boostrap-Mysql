@@ -24,6 +24,7 @@
         <title>Visualização</title>
         <style>
         .card-img-top {
+            
           
             width: 18rem;
             height: 200px;
